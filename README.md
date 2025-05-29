@@ -6,7 +6,7 @@ This is the official implementation of the paper **Augment Range-Filtering Appro
 
 There are **four atomic range filter conditions** between the object range $[l_i, r_i]$ and the query range $[l_q, r_q]$, as shown in the figure below:
 
-![Range-Range Filter Types](https://i.imgur.com/2VjY6oa.png)
+![Range-Range Filter Types](https://i.imgur.com/ZGGvjxe.png)
 
 The four atomic conditions are defined as:
 
