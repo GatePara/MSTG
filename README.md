@@ -139,7 +139,7 @@ To search with the RFANN index (supports arbitrary range filters):
 
 
 
-## 📁 Data Format
+## Data Format
 
 ### `.fbin` (Float Binary Format)
 Binary format for vectors:
