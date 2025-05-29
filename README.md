@@ -196,5 +196,5 @@ Binary format for vectors:
 ### `.range` Format
 Each line contains a scalar range for one vector:
 ```
-[int_min] [int_max]
+[range_start] [range_end]
 ```
