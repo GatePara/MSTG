@@ -1,0 +1,3 @@
+add_executable(fvecs_to_bin fvecs_to_bin.cpp)
+add_executable(bin_to_fvecs bin_to_fvecs.cpp)
+add_executable(gen_query_range gen_query_range.cpp)
