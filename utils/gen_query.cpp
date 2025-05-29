@@ -106,7 +106,7 @@ void generate_queries(double sel, int queries_per_bucket, const std::vector<Inte
 
 int main(int argc, char* argv[]) {
     if (argc < 3) {
-        std::cerr << "Usage: " << argv[0] << " <base_range_path> <universe_size>\n";
+        std::cerr << "Usage: " << argv[0] << " <base_range_path> <categories>\n";
         return 1;
     }
 

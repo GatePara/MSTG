@@ -23,7 +23,6 @@ Any range-range filter can be expressed as a combination (OR) of these atomic ca
 
 - GCC 11+
 - CMake 3.22+
-- Linux
 
 ### Build
 
@@ -52,6 +51,49 @@ This will generate four executables in `/build/test/`:
 * `build_range` – Builds the RFANN index for arbitrary range filters
 
 * `search_range` – Performs search on the RFANN index
+
+
+## Range Generation
+
+You can generate range files for **RRANN** and **RFANN** using the following commands:
+
+* **Base range for RFANN**:
+
+  ```bash
+  python3 utils/gen_base_rfann.py <output_path> <num_points>
+  ```
+
+  Example:
+
+  ```bash
+  python3 utils/gen_base_rfann.py rfann.range 1000000
+  ```
+
+* **Base range for RRANN**:
+
+  ```bash
+  python3 utils/gen_base_rrann.py <output_path> <num_points> <categories>
+  ```
+
+  Example:
+
+  ```bash
+  python3 utils/gen_base_rrann.py rrann.range 1000000 10000
+  ```
+
+* **Query range generation**:
+
+  ```bash
+  ./build/gen_query_range <base_range_path> <categories>
+  ```
+
+### Notes
+
+* `<output_path>`: Path to the output `.range` file.
+* `<num_points>`: Number of intervals to generate.
+* `<categories>`: The domain size (e.g., 10000 means range values are in \[0, 9999]).
+* `<base_range_path>`: Path to an existing base `.range` file used as input to generate queries.
+
 
 ## Index Construction
 
@@ -92,7 +134,7 @@ To build the RFANN index for arbitrary range filters:
 
 ---
 
-## Search on the index
+## Search
 
 To search with the RRANN index (supports composite range-range filters ① ∨ ② ∨ ③ ∨ ④):
 
