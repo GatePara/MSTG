@@ -1,5 +1,5 @@
 # MSTG: Labeled Multi-Segment Tree Index For Range-Range Filtering ANN search
-This is the official implementation of the paper **Augment Range-Filtering Approximate Nearest Neighbor Search: Handling Data with Range Attributes**
+This is the official implementation of the paper **Extended Range-Filtering Approximate Nearest Neighbor Search: Data Attributes from Numerics to Ranges**
 
 
 ## Range-Range Filters
